@@ -1,63 +1,35 @@
-div {
+#menu {
     width: 80%;
-    height: 100px;
-    background: red;
-	background: linear-gradient(135deg, transparent 50px, red 0) top left,
-	            linear-gradient(-135deg, transparent 50px, red 0) top right,
-	            linear-gradient(-45deg, transparent 50px, red 0) bottom right,
-	            linear-gradient(45deg, transparent 50px, red 0) bottom left;
-	background-size: 50% 50%;
-	background-repeat: no-repeat;
-
+    height: 80%;
 }
 
-div ~ div {  
-	background: orange;
-	background: linear-gradient(135deg, transparent 50px, orange 0) top left,
-	            linear-gradient(-135deg, transparent 50px, orange 0) top right,
-	            linear-gradient(-45deg, transparent 50px, orange 0) bottom right,
-				linear-gradient(45deg, transparent 50px, orange 0) bottom left;
-	background-size: 50% 50%;
-	background-repeat: no-repeat;
+    #menu ul {
+        display:block;
+        width: 120px;
+        height:100px;
+        margin:0px;
+        padding:0px;
+        position:relative;
+    }
 
-}
+    #menu ul li a:hover, #menu ul li:hover a{
+        background:yellow;
+    }
+    #menu ul li ul{
+        position:absolute;
+        top:0px;
+        left:100%;
+        display:none;
+        width:auto;
+    }
 
-div ~ div ~ div {
-    background: yellow;
-	background: linear-gradient(135deg, transparent 50px, yellow 0) top left,
-	            linear-gradient(-135deg, transparent 50px, yellow 0) top right,
-	            linear-gradient(-45deg, transparent 50px, yellow 0) bottom right,
-	            linear-gradient(45deg, transparent 50px, yellow 0) bottom left;
-	background-size: 50% 50%;
-	background-repeat: no-repeat;
-}
 
-div ~ div ~ div ~ div {
-    background: green;
-	background: linear-gradient(135deg, transparent 50px, green 0) top left,
-	            linear-gradient(-135deg, transparent 50px, green 0) top right,
-	            linear-gradient(-45deg, transparent 50px, green 0) bottom right,
-	            linear-gradient(45deg, transparent 50px, green 0) bottom left;
-	background-size: 50% 50%;
-	background-repeat: no-repeat;
-}
 
-div ~ div ~ div ~ div ~ div{
-    background: blue;
-	background: linear-gradient(135deg, transparent 50px, blue 0) top left,
-	            linear-gradient(-135deg, transparent 50px, blue 0) top right,
-	            linear-gradient(-45deg, transparent 50px, blue 0) bottom right,
-	            linear-gradient(45deg, transparent 50px, blue 0) bottom left;
-	background-size: 50% 50%;
-	background-repeat: no-repeat;
-}
 
-div ~ div ~ div ~ div ~ div ~ div{
-    background: blueviolet;
-	background: linear-gradient(135deg, transparent 50px, blueviolet 0) top left,
-	            linear-gradient(-135deg, transparent 50px, blueviolet 0) top right,
-	            linear-gradient(-45deg, transparent 50px, blueviolet 0) bottom right,
-	            linear-gradient(45deg, transparent 50px, blueviolet 0) bottom left;
-	background-size: 50% 50%;
-	background-repeat: no-repeat;
-}
+    #menu ul li:hover ul{display:block;}
+                #menu ul li ul li a{
+                    padding:5px 20px;
+                }
+                    #menu ul li ul li a:hover{
+                        background:wheat;
+                        color:black;}
