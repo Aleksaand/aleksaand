@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap%27');
+
+.main {
+
+    background-color: #b9d6ef;
+    height: 800px;
+    width: 980px;
+    position: static;
+
+}
+
+.clouds {
+    
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    height: 114px;
+
+}
+
+.clouds > div {
+    position: absolute;
+}
+
+.cloud1 {
+    left: -359px;
+}
+
+.cloud2 {
+    right: -367px;
+}
+
+.comingsoon {
+    
+    position: relative;
+    width: 514px;
+    height: 51px;
+    margin: 0 auto;
+    top: 52px;
+    text-shadow: 2px 4px 0 rgba(0, 0, 0, 0.17);
+    color: #fefefe;
+    font-family: 'Raleway', sans-serif;
+    font-size: 71px;
+    font-weight: 514px;
+    line-height: 51px;
+    text-align: left;
+    text-transform: uppercase;
+    
+    
+}
+
+
+
+.subscribe {
+    position: relative;
+    margin: 0 auto;
+    top: 75px;
+    height: 10px;
+    width: 284px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: #266b97;
+    font-size: 13px;
+    line-height: 16px;
+    
+}
+
+.form {
+    position: relative;
+    
+    top: 96px;
+}
+
+.megainput {
+    position: absolute;
+    top: 15px;
+    height: 37px;
+    width: 240px;
+    left: 319px;
+    font-family: 'Inconsolata', monospace;
+    width: 240px;
+    height: 37px;
+    box-shadow: 0 1px 0 #ffffff, inset 0 2px 5px rgba(29, 26, 22, 0.2), inset 0 0 2px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    
+}
+
+.megabutton {
+    position: absolute;
+    top: 15px;
+    height: 39px;
+    width: 99px;
+    left: 578px;
+    background-color: #fab937;
+    border-radius: 5px;
+    color: #fefefe;
+    
+}
+
+.megabutton > .value {
+    color: #fefefe;
+}
+
+.megainput :: placeholder{
+    position: absolute;
+    top: 15px;
+    left: 515px;
+    height: 25px;
+}
+
+.line1 {
+    position: relative;
+    top: 347px;
+    width: 980px;
+    height: 4px;
+    background-color: #ddecfa;
+    z-index: 4;
+}
+
+.line2 {
+
+    position: relative;
+    top: 347px;
+    width: 980px;
+    height: 9px;
+    background-color: #327dad;
+}
+
+.sea {
+    width: 980px;
+    height: 347px;
+    background-color: #266b97;
+    position: relative;
+    top: 347px;
+
+}
+
+.shape {
+    position: relative;
+    margin: 0 auto;
+    z-index: 5;
+    left: 350px;
+    top: -201px;
+}
+
+.ship {
+    position: relative;
+    margin: 0 auto;
+    z-index: 100;
+    right:  150px;
+    top: -525px;
+    width: 48px;
+    height: 21px;
+    
+}
