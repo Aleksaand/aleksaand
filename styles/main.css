@@ -1,14 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
 
 .main {
-
-    background-color: #b9d6ef;
+    background: linear-gradient(to bottom, #b9d6ef 58%, #ddecfa 58%, #ddecfa 58.75%,
+    #327dad 58.25%, #327dad 60%, #266b97 60%);
     height: 800px;
     width: 980px;
     position: static;
-
 }
 
 .clouds {
@@ -16,7 +17,8 @@
     position: relative;
     width: 200px;
     margin: 0 auto;
-    height: 114px;
+    height: 112px;
+    
 
 }
 
@@ -25,11 +27,12 @@
 }
 
 .cloud1 {
-    left: -359px;
+    left: -258.5px;
+    top: 0px;
 }
 
 .cloud2 {
-    right: -367px;
+    right: -290.5px;
 }
 
 .comingsoon {
@@ -38,7 +41,8 @@
     width: 514px;
     height: 51px;
     margin: 0 auto;
-    top: 52px;
+    top: 3px;
+    left: 5px;
     text-shadow: 2px 4px 0 rgba(0, 0, 0, 0.17);
     color: #fefefe;
     font-family: 'Raleway', sans-serif;
@@ -49,6 +53,7 @@
     text-transform: uppercase;
     
     
+    
 }
 
 
@@ -56,7 +61,8 @@
 .subscribe {
     position: relative;
     margin: 0 auto;
-    top: 75px;
+    top: 23px;
+    left: -3px;
     height: 10px;
     width: 284px;
     text-transform: uppercase;
@@ -64,36 +70,39 @@
     color: #266b97;
     font-size: 13px;
     line-height: 16px;
+
     
 }
 
 .form {
     position: relative;
     
-    top: 96px;
+    top: 25px;
+    margin: 0 auto;
 }
 
 .megainput {
     position: absolute;
-    top: 15px;
-    height: 37px;
+    top: 22px;
+    height: 30px;
     width: 240px;
-    left: 319px;
+    left: 315px;
     font-family: 'Inconsolata', monospace;
-    width: 240px;
-    height: 37px;
+    text-indent: 1.0em;
     box-shadow: 0 1px 0 #ffffff, inset 0 2px 5px rgba(29, 26, 22, 0.2), inset 0 0 2px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
+    border-radius: 5px;
+    letter-spacing: normal;
     
 }
 
 .megabutton {
     position: absolute;
-    top: 15px;
+    top: 20px;
     height: 39px;
     width: 99px;
-    left: 578px;
-    background-color: #fab937;
+    left: 564px;
+    background-color: #f9a527;
     border-radius: 5px;
     color: #fefefe;
     
@@ -103,55 +112,160 @@
     color: #fefefe;
 }
 
-.megainput :: placeholder{
+.megainput :: placeholder {
     position: absolute;
     top: 15px;
     left: 515px;
     height: 25px;
 }
 
-.line1 {
-    position: relative;
-    top: 347px;
-    width: 980px;
-    height: 4px;
-    background-color: #ddecfa;
-    z-index: 4;
-}
 
-.line2 {
 
-    position: relative;
-    top: 347px;
-    width: 980px;
-    height: 9px;
-    background-color: #327dad;
-}
 
-.sea {
-    width: 980px;
-    height: 347px;
-    background-color: #266b97;
-    position: relative;
-    top: 347px;
-
-}
 
 .shape {
     position: relative;
     margin: 0 auto;
     z-index: 5;
-    left: 350px;
-    top: -201px;
+    left: 328px;
+    
+    top: 108px;
 }
 
 .ship {
     position: relative;
     margin: 0 auto;
     z-index: 100;
-    right:  150px;
-    top: -525px;
+    left:  -165px;
+    top: -212px;
     width: 48px;
     height: 21px;
     
+}
+
+.clock {
+    position: relative;
+    margin: 0 auto;
+    z-index: 5;
+    top: -155px;
+    left: 344px;
+
+}
+
+.number1 {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #b9d6ef;
+    color: #266b97;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 70px;
+    font-family: 'Nunito', sans-serif;
+    text-indent: 15px;
+}
+
+.letter1 {
+    width: 60px;
+    font-family: 'Raleway', sans-serif;
+    height: 17px;
+    color: #f3f3f3;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 16px;
+    text-align: left;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-indent: 6px;
+}
+
+.number2 {
+    width: 70px;
+    font-family: 'Nunito', sans-serif;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #b9d6ef;
+    color: #266b97;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 16px;
+    text-align: left;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 70px;
+    text-indent: 18px;
+}
+
+.letter2 {
+    width: 60px;
+    height: 17px;
+    color: #f3f3f3;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 16px;
+    text-align: left;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    font-family: 'Raleway', sans-serif;
+}
+
+.number3 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #b9d6ef;
+    color: #266b97;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 16px;
+    text-align: left;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    font-family: 'Nunito', sans-serif;
+    line-height: 70px;
+    text-indent: 18px;
+}
+
+.letter3 {
+    width: 60px;
+    height: 17px;
+    color: #f3f3f3;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 16px;
+    text-align: left;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.blok2 {
+    position: relative;
+    top: -85px;
+    right: -110px;
+}
+
+.blok3 {
+    position: relative;
+    top: -175px;
+    right: -222px;
 }
