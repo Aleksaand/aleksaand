@@ -691,6 +691,72 @@ background-image: url(../images/textper.png);
     background: url(../images/map3.png);
 }
 
+.map_map_txt3 {
+    position: relative;
+    left: 745px;
+    top: -616px;
+    width: 330px;
+    height: 222px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+
+.point_txt {
+    display: flex;
+    flex-direction: row; 
+    
+    
+   
+}
+
+
+.point {
+    position: relative;
+    margin: 5px 10px 0 5px;
+    width: 5px;
+    height: 5px;
+    left: 0px;
+    top: 0px;
+   
+    background: #FFAF1E;
+}
+
+.point_txt_txt {
+    
+    margin: 0px 1px 0 1px;
+    font-family: Proxima Nova;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #333333;
+
+}
+
+.purchase {
+    position: relative;
+    left: 755px;
+    top: -596px;
+
+}
+
+.purchase_button {
+    position: relative;
+    width: 181px;
+    height: 38px;
+    left: 755px;
+    top: -576px;
+
+    background: #FFAF1E;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 
 
 
