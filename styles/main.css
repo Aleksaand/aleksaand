@@ -1,63 +1,194 @@
-body {
-    background: #999;
-    font-family: sans-serif;
+@keyframes anime__ball {
+    0%{
+        top: 115px;
+        left: 10px;
+    }
+    11% {
+        top: 55px;
+        left: 55px;
+    }
+    22% {
+        top: 125px;
+        left: 110px;
+    }
+    33% {
+        top: 55px;
+        left: 165px;
+    }
+    44% {
+        top: 145px;
+        left: 210px;
+    }
+    55% {
+        top: 55px;
+        left: 265px;
+    }
+    66% {
+        top: 165px;
+        left: 310px;
+    }
+    77% {
+        top: 55px;
+        left: 365px;
+    }
+    88% {
+        top: 185px;
+        left: 410px;
+    }
+    95% {
+        top: 195px;
+        left: 410px;
+
+    }
+    
+    100%{
+        top: 55px;
+        left: 410px;
+    }
+    }
+    
+    @keyframes anime__blok5 {
+        0% {
+            height: 70px;
+            top: 230px;
+
+        }
+        100% {
+            height: 150px;
+            top: 150px;
+
+
+        }
+    }
+    @keyframes anime__blok4 {
+        0% {
+            height: 90px;
+            top: 210px;
+
+        }
+        100% {
+            height: 130px;
+            top: 170px;
+
+
+        }
+    }
+    @keyframes anime__blok2 {
+        0% {
+            height: 130px;
+            top: 170px;
+
+        }
+        100% {
+            height: 90px;
+            top: 210px;
+
+
+        }
+    }
+    @keyframes anime__blok1 {
+        0% {
+            height: 150px;
+            top: 150px;
+
+        }
+        100% {
+            height: 70px;
+            top: 230px;
+
+
+        }
+    }
+
+
+    body {
+    /* background-image: url(../images/clock.png); */
+    background-repeat: no-repeat;
+
 }
 
-.button {
-    position: absolute;
-    overflow: hidden;
-    top: 100px;
-    left: 300px;
-    height: 80px;
-    width: 150px;
-    border: 3px solid #000;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    border-radius: 25px;
-    color: green;
-    background: #213e94;
-    font-size: 18px;
-
-}
-
-.button::before {
-    content: "";
-    width: 1.1em;
-    /* border: 3px solid black; */
-    height: 100%;
-    background: #fff;
-    opacity: 0.55;
-    transform: translateX(-6em)  skewX(135deg);
-    transition: 1s;
-
-}
-.button:hover:before{
-    transform: translateX(11em)  skewX(135deg);
-
-}
-
-.book  {
-    position: relative;
-    border: 3px solid black;
+.main {
     position: relative;
     margin: 0 auto;
-    top: 300px;
-    
-    max-width: 650px;
-    width: 650px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
+    width: 800px;
+    height: 300px;
+    border: 3px solid black;
 }
 
-.accard {
-    display: flex;
-    
+.ball {
+    position: absolute;
+    width: 30px;
+    border-radius: 50%;
+    height: 30px;
+    background: black;
+    top: 115px;
+    left: 10px;
+    animation-name: anime__ball;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    /* animation-iteration-count: infinite; */
+
+
 }
 
-ul.accard .li {
+
+.blok {
+    position: absolute;
+    
     width: 50px;
-    border: 2px solid black;
+    
+    border: 3px solid black;
+    margin: 0 auto;
+    
+}
+
+.blok__1 {
+    left: 10px;
+    height: 150px;
+    top: 150px;
+    animation: anime__blok1;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    /* animation-iteration-count: infinite; */
+
+}
+
+.blok__2 {
+    left: 110px;
+    height: 130px;
+    top: 170px;
+    animation: anime__blok2;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    /* animation-iteration-count: infinite; */
+
+}
+
+.blok__3 {
+    left: 210px;
+    height: 110px;
+    top: 190px;
+    
+}
+
+.blok__4 {
+    left: 310px;
+    height: 90px;
+    top: 210px;
+    animation: anime__blok4;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    /* animation-iteration-count: infinite; */
+
+}
+
+.blok__5 {
+    left: 410px;
+    height: 70px;
+    top: 230px;
+    animation: anime__blok5;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    /* animation-iteration-count: infinite; */
 
 }
