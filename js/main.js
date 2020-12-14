@@ -1,45 +1,41 @@
-// `use strick`;
-// сonst randomInt = (min, max) => {
+// let  randomInt = (min, max) => {
 //     let rand = min + Math.random() * (max + 1 - min);
 //     return Math.floor(rand);
 // }
+// console.log(randomInt(2,9));
+// let text = element.textContent;
+// console.log(text);
+document.querySelector('.button').onclick = function(){
+    console.log('GOGOGO');
+    let element = document.querySelector('.input');
+    console.log(typeof(element), element.value, element);
+    let elementValue = element.value;
+    console.log(elementValue);
+    let splitArray = [];
+    splitArray = elementValue.split(" ");
+    console.log(splitArray);
+    let str = '';
+    for(let i = 0; i < splitArray.length; i++) {
+        console.log(i);
+        str = `${str} <textarea class="input" id="${i}"name="text" >${splitArray[i]}</textarea>`;
+    }
+    document.querySelector('.main1').innerHTML = str;
 
-// Есть два корабля,
-//   первый корабль имеет  HP (Health Points) 100, Damage 4, 
-//     второй корабль имеет HP 40, damage 15. Описать объектами.
-// В одной итерации стреляют друг в друга.
-// Вывести лог боя. Определить победителя. 
 
-
-
-let str = '';
-
-const ship1 = {
-  healthPoints: 100,
-  damage: 4,
 }
-const ship2 = {
-  healthPoints: 40,
-  damage: 15,
-}
-const figth = (obj1, obj2) => {
-  let round = 0;
-  
-  while ((obj1.healthPoints > 0) && (obj2.healthPoints > 0)) {
-    round = round +1;
-    obj1.healthPoints = obj1.healthPoints - obj2.damage;
-    obj2.healthPoints = obj2.healthPoints - obj1.damage;
-    str = ` ${str} <div> round# ${round} ~ healthPoints#1: ${obj1.healthPoints}, healthPoints#2: ${obj2.healthPoints} </div>\n`;
+
+// let splitArray = element.split(" ");
+//     console.log(splitArray);
     
-  }
-  
-  if (obj1.healthPoints > 0) {
-      str = ` ${str} <div> Ship1 --- WIN !!! </div>\n`;
-  } else {
-    str = ` ${str} <div> Ship2 --- WIN !!! </div>\n`;
-  }
-  return str;
-}
 
-figth(ship1, ship2);    
-document.querySelector('.main').innerHTML = str;
+
+// const submitData = () => {
+//     text = text + text;
+//     console.log("text");
+
+// };
+// let str ="After soaking your filter., in a warm water bath for at least five minutes, drop it into the bottom of your siphons top component, or hopper,. and hook to the bottom of the hoppers glass tubing.,Fill your siphon bottom component.,Insert the hopper, filter and all.";
+
+// let splittedArray = str.split(".,");
+
+// console.log(splittedArray);
