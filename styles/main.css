@@ -1,25 +1,29 @@
 .main {
-  background-color: aquamarine;
-  height: 500px;
-  width: 900px;
+  background-color: #999;
+  margin: 5px;
+  width: 950px;
+  height: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-around center;
+      -ms-flex-pack: space-around center;
+          justify-content: space-around center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 5px;
 }
 
-.main .button {
-  height: 50px;
-  width: 50px;
-  font-size: 20px;
-  margin: 20px;
-  background-color: hotpink;
+.main div {
+  margin: 5px 5px 5px 5px;
+  height: 100px;
+  width: 100px;
+  border: 3px solid black;
+}
+
+.items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,6 +33,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 5px;
+  z-index: 2;
+  color: aqua;
 }
 /*# sourceMappingURL=main.css.map */
