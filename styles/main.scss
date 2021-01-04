@@ -1,90 +1,69 @@
-// $side: 100px;
-@keyframes rotat {
+$side: 100px;
+@keyframes move {
     0% {
-        transform: rotate(0deg);
+       
     }
-    
     100% {
-        transform: rotate(360deg);
+        left: 400px;
     }
 }
-.container {
-    // height: side;
-    // background-color: #999999;
-    height: 100px;
-    padding: 10px;
 
-    margin: 10px;
-    display: block;
-    flex-direction:row;
-    // justify-content:flex-start;
-    // align-items: center;
-    // flex-wrap: wrap;
-    font-size: 20px;
-    // border: 3px solid black;
-}
 .main {
+    position:absolute;
+    left: 40px;
+    width: 500px;
+    height: 500px;
+    background-color: #999999;
     display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    // border: 3px solid black;
+    flex-direction:column;
 }
 
-.clock {
-        border: 3px solid black;
-        font-size: 30px;
-        margin: 10px;
-        height: 50px;
-        width: 400px;
-        display: flex;
-        justify-content:space-around;
-        align-items: center;
-    }
-.hour .minute .second {
-    height: 20px;
+.moving {
+    // animation: move 5s linear forwards;
+}
+.containerControl, .containerSemicolr {
+    // width: 100px;
+    // height: 100px;
+    background-color: #555555;
+    border: 3px solid black;
+    margin: 20px;
+}
+.containerSemicolr {
+    width: 100px;
+    height: 200px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+
+}
+.containerControl {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.redBut, .yellowBut, .greenBut {
+    height: 50px;
     width: 50px;
 }
-.arrow {
-        // background-color: #999999;
-        background-image: url(/images/arrow.png);
-        background-repeat: no-repeat;
-        border-radius: 50%;
-        height: 30px;
-        width: 30px;
-        transform: rotate(0deg);
-        
-    }
-.anime {
-    animation: rotat 3s linear infinite;
-}    
-.main2 {
-    // border: 3px solid black;
-    display: flex;
+.red, .yellow, .green {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     margin: 10px;
-    justify-content: flex-start;
-    align-items:center;
+    background-color: #999999;
 }
-.input {
-    margin: 0 10px 0 0;
-    display: flex;
-    justify-content:center;
-    align-items: center;
+.redBut {
+    background-color: red;
 }
-.button {
-    border: 3px solid black;
-    width: 150px;
-    border-radius: 5px;
-    display: flex;
-    justify-content:center;
-    align-items: center;
+.yellowBut {
+    background-color: yellow;
 }
-.realTime {
-    // border: 3px solid black;
-    width: 150px;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    background-color: rgb(235, 247, 6);
+.greenBut {
+    background-color: green;
 }

@@ -1,143 +1,101 @@
-@-webkit-keyframes rotat {
+@-webkit-keyframes move {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    left: 400px;
   }
 }
 
-@keyframes rotat {
+@keyframes move {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    left: 400px;
   }
-}
-
-.container {
-  height: 100px;
-  padding: 10px;
-  margin: 10px;
-  display: block;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  font-size: 20px;
 }
 
 .main {
+  position: absolute;
+  left: 40px;
+  width: 500px;
+  height: 500px;
+  background-color: #999999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.clock {
+.containerControl, .containerSemicolr {
+  background-color: #555555;
   border: 3px solid black;
-  font-size: 30px;
-  margin: 10px;
-  height: 50px;
-  width: 400px;
+  margin: 20px;
+}
+
+.containerSemicolr {
+  width: 100px;
+  height: 200px;
+  border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.containerControl {
+  width: 200px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.hour .minute .second {
-  height: 20px;
+.redBut, .yellowBut, .greenBut {
+  height: 50px;
   width: 50px;
 }
 
-.arrow {
-  background-image: url(/images/arrow.png);
-  background-repeat: no-repeat;
+.red, .yellow, .green {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
-.anime {
-  -webkit-animation: rotat 3s linear infinite;
-          animation: rotat 3s linear infinite;
-}
-
-.main2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 10px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-color: #999999;
 }
 
-.input {
-  margin: 0 10px 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.redBut {
+  background-color: red;
 }
 
-.button {
-  border: 3px solid black;
-  width: 150px;
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.yellowBut {
+  background-color: yellow;
 }
 
-.realTime {
-  width: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #ebf706;
+.greenBut {
+  background-color: green;
 }
 /*# sourceMappingURL=main.css.map */
