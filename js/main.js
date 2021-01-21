@@ -3,28 +3,23 @@
 //     return Math.floor(rand);
 // }
 // // console.log(randomInt(2,9));
-const btnr = document.querySelector('.redBut');
-const btny = document.querySelector('.yellowBut');
-const btng = document.querySelector('.greenBut');
-const red = document.querySelector('.red');
-const yellow = document.querySelector('.yellow');
-const green = document.querySelector('.green');
+// let str = 'block_element--modificator';
+ 
+// for(i = 0; i < str.length; i++) {
+//   if(str[i] === '_' || str[i] === '__' || str[i] === '--') {
+//     str[i] = '+';
+//     console.log(str);
+//   }
+// };
+// console.log(str);
 
-document.addEventListener('click', (event) => {
-    red.style.backgroundColor = "";
-    yellow.style.backgroundColor = "";
-    green.style.backgroundColor = "";
+let str = 'block_element--modificator';
+
+const reg = '_';
+const reg1 = '--';
+str = str.replaceAll(reg, '+');
+str = str.replaceAll(reg1, '+');
 
 
-
-    if(event.target.classList.contains("redBut")) {
-        red.style.backgroundColor = "red";}
-    console.dir(event.target);
-    if(event.target.classList.contains("yellowBut")) {
-        yellow.style.backgroundColor = "yellow";}
-    console.dir(event.target);
-    if(event.target.classList.contains("greenBut")) {
-        green.style.backgroundColor = "green";}
-    console.dir(event.target);
-    
-});
+str = str.split('+');
+console.log(str);
