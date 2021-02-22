@@ -597,9 +597,11 @@ body {
     line-height: 1.5;      
 }
 
+
 .reglament__content,
-.contact__popap__content,
-.privat__polit__content{
+.privat__polit__content,
+.contact__popap__content
+{
 padding: 50px 30px ;
 }
 
@@ -642,6 +644,9 @@ padding: 50px 30px ;
  display: inline-block;
  padding: 30px 15px;
  min-height: 100%;
+}
+.contact__popap__modal__body{
+    padding: 30px 15px;
 }
 .reglament__content{
     background-color: #fff;
@@ -833,6 +838,12 @@ padding: 50px 30px ;
         height: 140px;
         justify-content: space-between;
     }
+    .contact__popap__content{
+        max-width: 600px;
+    }
+    .button__contact__modal__body__closer{
+        max-width: 650px;
+    }
 }
 
 @media (max-width: 555px) {    
@@ -862,6 +873,12 @@ padding: 50px 30px ;
     }
     .header{
         height: 90px;
+    }
+    .contact__popap__content{
+        max-width: 500px;
+    }
+    .button__contact__modal__body__closer{
+        max-width: 555px;
     }
 }
 
@@ -893,6 +910,12 @@ padding: 50px 30px ;
         height: 180px;
         
     }
+    .contact__popap__content{
+        max-width: 450px;
+    }
+    .button__contact__modal__body__closer{
+        max-width: 510px;
+    }
 }
 
 @media (max-width: 460px) {
@@ -918,6 +941,12 @@ padding: 50px 30px ;
         height: 200px;
         
     }
+    .contact__popap__content{
+        max-width: 400px;
+    }
+    .button__contact__modal__body__closer{
+        max-width: 460px;
+    }
 
 }
 
@@ -938,6 +967,9 @@ padding: 50px 30px ;
     .footer__space{
         height: 0px;
     }
+    .contact__popap__content{
+        max-width: 350px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -956,6 +988,12 @@ padding: 50px 30px ;
     .spacebox__cell{
         height: 50px;
     }
+    .contact__popap__content{
+        max-width: 320px;
+    }
+    .button__contact__modal__body__closer{
+        max-width: 375px;
+    }
 
 
 }
@@ -972,7 +1010,5 @@ padding: 50px 30px ;
     .spacebox__cell{
         height: 20px;
     }
-
-
 }
 
